@@ -4,7 +4,26 @@ def unique_elements(list):
 
 print(unique_elements([1, 2, 2, 3, 4, 4, 5]))
 
-# 2не понял как делать
+# 2
+def merge_dicts(dict1, dict2):
+    result = dict1.copy()
+    for key, value in dict2.items():
+        if key in result:
+            result[key] += value
+        else:
+            result[key] = value;
+    return result;
+merge_dicts()
+
+firstDict = {
+    'name':'Первый словарь'
+    
+    
+}
+
+secondDict = {
+    'name1':'Второй словарь'
+}
 
 
 # 3 задание
